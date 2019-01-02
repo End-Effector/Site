@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gains Anatomy</title>
+        <link href='https://fonts.googleapis.com/css?family=Kurale|Numans|Oleo+Script' rel='stylesheet' type='text/css'>
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link type="text/css" href="styles/main.css" rel="stylesheet" >
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!--Faltam aqui elementos: autor, palavras-chave -->
+        
+        <!-- JQuery para o slider-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.slidertron-1.1.js"></script>
+        <script type="text/javascript">
+            $(window).on('load', function() {
+                			
+                $( ".handle" ).on( "click", function() {
+                    $("nav ul").toggleClass("showing");
+                });
+					
+                $(function() {
+                    $('#slider').slidertron({
+                        viewerSelector: '.viewer',
+                        indicatorSelector: '.indicator span',
+                        reelSelector: '.reel',
+                        slidesSelector: '.slide',
+                        speed: 'slow',
+                        advanceDelay: 10000
+                    });
+                });
+				
+				$('#loadingPics').css({"display": "block"});
+            });
+        </script>   
+    </head>
+    
+    <body>
+    
+	<script>
+		jQuery('body').css('display','none');
+		jQuery(document).ready(function() {
+			jQuery('body').fadeIn();
+			jQuery('a').on('click',function(event){
+				var thetarget = this.getAttribute('target')
+				if (thetarget != "_blank"){			
+					var thehref = this.getAttribute('href')
+					event.preventDefault();
+					jQuery('body').fadeOut(function(){
+						//alert(thehref)
+						window.location = thehref					
+					});
+				}
+			});
+		});
+		setTimeout(function(){
+			jQuery('body').fadeIn();
+		},1000)
+	</script>
+		
+        <header>
+		  <a href="index.html" class="logo1"><img src="images/GA_new.png" alt="Gains Anatomy Logo" width="150px" height="150"></a>
+          <h1 id="logo0"> Gains Anatomy</h1>
+        </header>
+		
+		<nav>
+			<ul>
+				<li><a href="index.html"> Home</a></li>
+				<li><a href="articles.php"> Articles</a></li>
+				<li><a href="food.php"> Food</a></li>
+				<li><a href="services.php"> Services</a></li>
+			</ul>
+			<div  class="handle">&#9776; Menu</div>
+		</nav>
+        
+        <div id="barra">
+		
+            <h2 id="titulo">Home</h2>
+            
+            <div id="icons">
+                <ul>
+                    <!-- Faltam os links de referência.-->
+                    <li><img src="images/facebook.png"/></li>
+                    <li><img src="images/twitter.png"/></li>
+                    <li><img src="images/YouTube.png"/></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div id="loadingPics">
+			<div id="slider">
+				<div class="viewer">
+					<div class="reel">
+						<div class="slide">
+							<img src="/images/welcomeBanner.jpg" alt="" width="870px" height="230"/>
+						</div>
+						<div class="slide">
+							<img src="images/ArticlesBanner.jpg" alt="" width="870px" height="230"/>
+						</div>
+						<div class="slide">
+							<img src="images/FoodBanner.jpg" alt="" width="870px" height="230"/>
+						</div>
+						<div class="slide">
+							<img src="images/ServicesBanner.jpg" alt="" width="870px" height="230"/>
+						</div>
+					</div>
+				</div>
+				<div class="indicator">
+					<span>1</span>
+					<span>2</span>
+					<span>3</span>
+					<span>4</span>
+				</div>
+			 </div>
+		 </div>
+    
+         <div id="intro_texto">
+                <h2>Need help finding out your daily caloric needs? 
+				What about your macronutrient requirements?
+				Here at Gains Anatomy we can help you set up
+				everything you need, just check out our Services
+				and start making gains today.</h2>
+        </div>
+        
+        
+         <div id="imagens_textos">
+             <div id="bloco0">
+                <p id="texto0">
+                    Latest articles/recipes. 
+                </p>
+             </div>
+			 <!--images/PapasAveiaCoco.jpg Quando tiverem corrigidas têm de ser trocadas--> 
+             <div id="bloco1"><a href="food.php">
+			    <h3 id="titulo1">Diversify your oatmeat</h3>
+                <img id="imagem1" src="images/PapaAveiaReduzida.jpg" alt="Imagem de comida ou artigo" width="400vw" height="290vw"/>
+                <p id="texto1">Add egg whites to your oatmeal to increase its volume and protein. This recipe will make your oatmeal more interesting.</p>
+             </a></div>
+			 <!--images/BuildingAmealPlan.png --> 
+             <div id="bloco1"><a href="articles.php">
+			    <h3 id="titulo1"> Building a meal plan</h3>
+                <img id="imagem1" src="images/bolo_bolacha.jpg" alt="Imagem de comida ou artigo" width="400vw" height="290vw"/>
+                <p id="texto1">Many people don’t like to count calories and/or follow the IIFYM approach, they prefer to have a fixed meal plan. If you don’t have the money to pay a nutritionist for it, this article will help you create one.</p>
+             </a></div>
+             <div id="bloco1"><a href="food.php">
+			    <h3 id="titulo1"> Coconut, banana and chocolate cake</h3>
+                <img id="imagem1" src="images/bolo_bolacha.jpg" alt="Imagem de comida ou artigo" width="400vw" height="290vw"/>
+                <p id="texto1">Fast, simple cake done with a microwave. Protein chocolate topping.</p>
+             </a></div>
+
+			<p class="button" id="buttonIndex"><a href="articles.php">More Articles/Reviews</a></p>
+             
+         </div>
+        
+         <footer>
+            <h4 id="footer1">Contactos</h4>
+            <h4 id="footer2">Direitos Reservados</h4>
+         </footer>        
+    </body>
+</html>

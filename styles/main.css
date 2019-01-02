@@ -1,0 +1,1333 @@
+
+body {
+    background: rgba(78, 191, 3, 0.19);
+    font-family: 'Numans', Verdana , Tahoma, Helvetica, serif;
+/*background: linear-gradient(to bottom, #7db9e8 0%,#1e5799 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    font-size: 16px; /*major third*/
+    
+}
+
+a {
+    color: inherit;
+}
+
+h1 {
+    font-family: 'Oleo Script', Verdana , Tahoma, Helvetica, cursive;
+    /*testar rgb: #ff0b0bff*/
+    display:inline-block;
+    vertical-align: top;
+}
+
+h2,h3,h4 {
+    font-family: 'Kurale', Verdana , Tahoma, Helvetica, serif;
+}
+
+p {
+    font-family: 'Numans', Verdana , Tahoma, Helvetica, sans-serif;
+
+    line-height: 1.3750em;
+    margin: 0.7142857em 0;
+}
+
+h2 {
+    color: #ffffff;
+    line-height: 1.74357em;
+    margin: 1.1266em 0;
+}
+
+#logo0{
+    color: #ef4a1a;
+    font-size: 4.768em;
+    margin: 0.2em 0;
+    margin-left: 0.2em;
+    line-height: 1.1535em;
+}
+
+.logo1 {
+    display: none;
+}
+
+@media screen and (max-width: 580px){
+    .logo1 {
+        display: block;
+        text-align: center;
+    }
+    #logo0 {
+        display: none;
+    }
+}
+
+/*----------------------- Slider Styles ----------------------------------------*/
+#slider {
+	position: relative;
+	/*margin: 50px 45px 0px 45px;*/
+    margin: 40px auto;
+	width: 890px;
+}
+
+#slider .viewer {
+	width: 890px;
+	height: 250px;
+	border: solid 1px #D4D4D4;
+	border-radius: 3px;
+}
+
+#slider .slide {
+	width: 890px;
+	height: 250px;
+	padding: 10px;
+}
+
+#slider .indicator {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+
+#slider .indicator span {
+	display: inline-block;
+	text-indent: -9999em;
+	width: 12px;
+	height: 12px;
+	background: #E3DFDF;
+	border-radius: 6px;
+	margin: 0 2px 0 2px;
+}
+
+#slider .indicator span.active {
+	background: #6E6E6E;
+}
+
+/*----------------------- Navigation Styles ----------------------------------------*/
+    
+nav ul{
+	background-color: #f97650;/*#af1b00; /*#008617 ; #003b1f;rgb(14, 81, 124);*/
+	overflow: hidden;
+	height: 25vw;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	margin: 0;
+	-webkit-transition: max-height 0.4s;
+	-ms-transition: max-height 0.4s;
+	-moz-ransition: max-height 0.4s;
+	-o-transition: max-height 0.4s;
+	transition: max-height 0.4s;
+	/*border-top: 3px solid #65b300;*/
+}
+
+nav ul li {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 3px;
+	text-align: left;
+	list-style: none;
+	margin-left: -7vw;
+}
+
+nav ul li a{
+	display: block;
+	text-align: center;
+	padding: 0 auto;
+	/*font-size: 120%;*/
+	text-decoration: none;
+	font-size: 1.25em;
+	line-height: 1.1000em;
+}
+
+#slider{
+	display: none;
+}
+
+#loadingPics{
+	display: none;
+}
+
+nav ul{
+	max-height: 0;
+}
+
+.showing{
+	max-height: 38vw;
+	height: 38vw;
+}
+
+.handle{
+	display: block;
+	background-color: #ef4a1a;
+	height: 10vw;
+	font-size: 1.25em;
+	line-height: 1.1000em;
+	padding-top: 1.7vw;
+	padding-bottom:0vw;
+}
+
+@media (min-width:481px)  { 
+	Diminui o tamanho da barra menu. 
+	.handle{
+		height: 6vw;
+	}
+	
+	Diminui o espaço que abre quando clica.
+	.showing{
+		max-height: 20vw;
+		height: 20vw;
+	}
+}
+
+@media (min-width:641px)  { 
+	.handle{
+		display: none;
+	}
+	
+	.showing{
+		max-height: 15vw;
+		height: 15vw;
+	}
+	
+	nav {
+        background-color: #ef4a1a;
+        height: 5.7vw;
+    }
+    
+    nav ul {
+        overflow: visible;
+        margin-right: 13vw
+    }
+    
+    nav ul li{
+        display:inline-block;
+        width: 10vw;
+        margin-left: 40px;
+        font-size: 95%;
+    }
+    
+    nav ul li a{
+        width: 110px;
+        font-size: 1.54em;
+        line-height: 1.75974em;
+        margin-top: -3.5px;
+        padding-bottom: 4px;
+    }
+    
+    nav ul li a:visited{
+        color: rgb(255, 255, 255);
+    }
+
+    nav ul li a:active {
+        color: rgb(172,140,71);
+    }
+
+    nav ul li a:hover{
+        color: rgb(255,255,255);
+        transition: .5s color;
+        background-color: #f97650; #da3719;#43a83f;rgb(0, 110, 183);
+    }
+}
+
+@media (min-width:961px){
+	nav {
+        height: 4vw;
+    }
+	
+	#slider{
+        display: block;
+        margin-bottom: -1vw;
+        margin-top: 5vw;
+    }
+}
+
+@media (min-width:1025px){
+	/*nav {
+        height: 4vw;
+    }*/
+}
+
+@media (min-width:1281px)  {
+	nav {
+        height: 3vw;
+    }
+	
+	nav ul li a{
+		padding-bottom: 2vw;
+	}
+}
+
+/*----------------------- Barra Intro/social Icons Styles----------------------------------------*/
+	
+#barra {
+	position: relative;
+	background-color: #f97650; /*#da3719; #43a83f;#4a9470;rgb(1, 113, 191);*/
+	margin-bottom: 15px;
+	height: 13vw;
+}
+	
+#titulo {
+	position: absolute;
+	left: 5px;
+	top: -30px;
+	font-size: 1.563em;
+	line-height: 1.75974em;
+	margin: 1.1164em 0;
+}    
+
+#icons {
+	position: absolute;
+	top: -13px;
+	right: 10px;
+}
+
+#icons ul li{
+	display: inline;
+}
+
+
+@media (min-width:481px)  { 
+	#barra {
+		height: 7vw;
+	}
+}
+
+@media (min-width:641px)  {
+	#barra {
+		height: 5vw;
+	}
+}
+
+@media (min-width:961px)  {
+	#barra {
+		height: 4vw;
+	}
+}
+
+@media (min-width:1025px)  {
+/*	#barra {
+		height: 4vw;
+	}*/
+}
+
+@media (min-width:1281px)  {
+	#barra {
+		height: 3vw;
+	}
+}
+
+
+/*----------------------- Button Bottom Styles----------------------------------------*/
+.button {
+    clear: both;
+    background-color: #61d217;/*#14bc1f;#65b300;#751590;#c65f3c;rgb(107, 164, 101);*/
+    /*Fazer botões mais curvos nos cantos*/
+    border-radius: 8px;
+    max-width: 250px;
+    font-size: 1em;
+    line-height: 1.3750em;
+}
+
+.button a {
+	color: rgb(226,226,226);
+	text-decoration: none; /*Remover a linha em baixo do texto.*/
+	font-style: normal; /*Texto sem ser itálico*/
+	text-transform: uppercase;
+	
+	/*Estes dois comandos fazem com que o texto fique alinhado, e que seja mais facil ser 
+selecionado por um utilizador.*/
+	text-align: center;
+	display: block;
+	
+	/*Acrescentar espaço por cima e baixo do botão, para ficar mais gordo.*/
+	padding: 10px 0;
+}
+
+.button a:hover {
+	background-color: #45aa04;/*#007b08;#5ba000;#660382; #803015; rgb(78, 119, 74);*/
+	/*Fazer botões mais curvos nos cantos*/
+	border-radius: 8px;
+}
+
+/*----------------------- Footer Styles----------------------------------------*/
+
+
+footer {
+	/*clear: both;*/
+	display: block;
+	background-color: #ef4a1a; /*#c41e00; #008617 ;#003b1f; rgb(19, 83, 121);*/
+	position: relative;
+	height: 9vw;
+	margin-top: 10px;
+	font-size: 1em;
+	line-height: 1.3636em;
+	margin: 0.714285em 0;
+}
+
+#footer1 {
+	position: absolute;
+	left: 15px;
+	top: -20px;
+}
+
+#footer2 {
+	position: absolute;
+	right: 15px;
+	top: -20px;
+}
+
+@media (min-width:481px)  {
+	footer {
+		height: 5vw;
+	}
+}
+
+@media (min-width:641px)  { 
+	footer {
+		height: 3.5vw;
+	}
+}
+
+@media (min-width:961px){
+	footer {
+		height: 2.5vw;
+	}
+}
+
+@media (min-width:1025px){
+	footer {
+		height: 2vw;
+	}
+}
+
+@media (min-width:1281px)  {
+	footer {
+		height: 1.8vw;
+	}
+}
+*/
+
+/*----------------------- Shop Page Styles----------------------------------------*/
+
+#shopLoggedIn {
+	margin-left: 4vw;
+}
+
+#shop12 {
+	margin-top:    4vw;
+	margin-left:   4vw;
+	margin-bottom: 4vw;
+}
+
+#shop1 {
+	display: inline-block;
+	margin-left:   4vw;
+	margin-bottom: 4vw;
+}
+ 
+#shop2 {
+	display: inline-block;
+	margin-left:   4vw;
+	margin-bottom: 4vw;
+}
+
+#shop3{
+	width: 90%;
+	margin-left: 4vw;
+}
+
+#shop4{
+	margin-top:    4vw;
+	margin-bottom: 4vw;
+}
+
+@media (min-width:481px){
+	#shop3{
+	   border: 3px solid #65b300;
+	   background-color: rgba(101, 179, 0, 0.32);
+	}
+	
+	#shop4{
+		margin-left:   4vw;
+	}
+	
+	#shop5{
+		margin-left:   4vw;
+		margin-top:	   4vw;
+		width: 80%;
+	}
+	
+	#shop11{
+		margin-left:   4vw;
+		margin-bottom: 4vw;
+	}
+}
+
+@media (min-width:641px){
+	#shop4{
+		width: 90%;
+	}
+	
+	#shopLoggedIn {
+		margin-left: 3vw;
+	}
+
+	#shop12 {
+		margin-top:    2vw;
+		margin-left:   0vw;
+		margin-bottom: 2vw;
+	}
+
+	#shop1 {
+		margin-left:   0vw;
+		margin-bottom: 2vw;
+	}
+	 
+	#shop2 {
+		margin-left:   0vw;
+		margin-bottom: 2vw;
+	}
+	
+}
+
+@media (min-width:961px){
+	#shop3{
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width:1025px){
+	#shop3{
+		width: 40%;
+	}
+	
+	#shop4{
+		margin-left:   2vw;
+	}
+	
+	#shop5{
+		margin-left:   2vw;
+	}
+	
+	#shopLoggedIn {
+		margin-left: 2vw;
+	}
+
+	#shop12 {
+		margin-top:    1vw;
+		margin-bottom: 1vw;
+	}
+
+	#shop1 {
+		margin-bottom: 1vw;
+	}
+	 
+	#shop2 {
+		margin-bottom: 1vw;
+	}
+	
+}
+
+@media (min-width:1281px)  {
+	#shop3{
+		width: 30%;
+	}
+	
+	#shop4{
+		margin-top:    1.5vw;
+		margin-bottom: 1.5vw;
+	}
+	
+	#shop5{
+		margin-top:	   1.5vw;
+	}
+	
+	#shop11{
+		margin-left:   2vw;
+		margin-bottom: 1.5vw;
+	}
+	
+	#shopLoggedIn {
+		margin-left: 1vw;
+	}
+	
+}
+
+/*----------------------- UserData Page Styles----------------------------------------*/
+
+#userDataLoggedIn {
+	margin-left:   4vw;
+}
+
+#userdata-3{
+	margin-top:    4vw;
+	margin-bottom: 4vw;
+}
+
+#userdata-1{
+	display: inline-block;
+	margin-bottom: 5vw;
+}
+
+#userdata-2{
+	display: inline-block;
+	margin-bottom: 5vw;
+}
+
+#userdata0{
+	width: 90%;
+	margin-left: 4vw;
+}
+
+#userdata2{
+	margin-bottom: 4vw;
+}
+
+#userdata19{
+	width: 100%;
+}
+
+/*para remover o texto, n tem espaço.*/ 
+#userdata18{
+	width: 48%;
+}
+
+@media (min-width:481px)  {
+	#userdata0{
+	   border: 3px solid #65b300;
+	   background-color: rgba(101, 179, 0, 0.32);
+	}
+	
+	#userdata2{
+		margin-left: 4vw;
+		width: 90%;
+	}
+	
+	#userdata3{
+		margin-left: 4vw;
+		margin-bottom: 4vw;
+	}
+	
+	#userdata4{
+		margin-left: 4vw;
+		width: 80%;
+	}
+	
+	#userdata-3{
+		margin-top:    3vw;
+		margin-bottom: 3vw;
+	}
+
+	#userdata-1{
+		margin-bottom: 3vw;
+	}
+
+	#userdata-2{
+		margin-bottom: 3vw;
+	}
+	
+}
+
+@media (min-width:641px)  {
+	#userdata4{
+		margin-bottom: 3vw;
+	}
+	
+	#userdata0{
+		margin-left: 5vw;
+	}
+	
+	#userdata-3{
+		margin-top:    2vw;
+		margin-bottom: 2vw;
+	}
+
+	#userdata-1{
+		margin-bottom: 2vw;
+	}
+
+	#userdata-2{
+		margin-bottom: 0vw;
+	}
+}
+
+@media (min-width:961px)  {
+	#userdata0{
+		width: 60vw;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width:1025px)  {
+	#userdata0{
+		width: 40vw;
+	}
+	
+	#userdata2{
+		margin-left: 2vw;
+	}
+	
+	#userdata-3{
+		margin-top:    1vw;
+		margin-bottom: 1vw;
+	}
+
+	#userdata-1{
+		margin-bottom: 1vw;
+	}
+
+	#userdata-2{
+		margin-bottom: 0vw;
+	}
+	
+	#userDataLoggedIn {
+		margin-left:   2vw;
+	}
+	
+}
+
+@media (min-width:1281px)  {
+	#userdata0{
+		width: 30vw;
+	}
+	
+	#userdata4{
+		margin-left: 1.5vw;
+	}
+	
+	#userdata2{
+		margin-left: 1.5vw;
+		margin-bottom: 2vw;
+	}
+	
+	#userDataLoggedIn {
+		margin-left:   1vw;
+	}
+}
+/*----------------------- Services Page Styles----------------------------------------*/
+
+#tit-plan{
+	border-bottom: 3px solid #61d217;
+}
+
+#tit-plan2{
+	border-bottom: 3px solid #f97650;
+}
+
+#plan h3{
+	margin-top: -0.9vw;
+	margin-left: 2vw;
+}
+
+#plan {
+	width: 90%;
+	margin-bottom: 3vw;
+	margin-top: 3vw;
+	margin-left: 4vw;
+}
+
+#plan ul{
+	padding-left: 8vw;
+}
+
+#loginform{
+	margin-top: 5vw;
+}
+
+#servicesNotLoggedIn{
+	margin-left: 4vw;
+}
+
+#servicesLoggedIn{
+	margin-left: 4vw;
+}
+
+#create4 {
+	/*tem-se de usar o inline-block porque se não acontece o 
+	que se chama de margin colapse. Ou seja a propriedade margin
+	deixa de funcionar*/
+	display: inline-block;
+	margin-bottom: 3vw;
+}
+
+#create5 {
+	display: inline-block;
+	margin-top: 3vw;
+	margin-bottom: 5vw;
+}
+
+#create6 {
+	display: inline-block;
+	margin-bottom: 5vw;
+}
+
+@media (min-width:481px)  {
+	#plan ul{
+		padding-left: 6vw;
+	}
+	
+	#create3{
+		margin-bottom: 3vw;
+	}
+
+	#create4 {
+		margin-bottom: 3vw;
+		margin-top:    0vw;
+	}
+
+	#create5 {
+		margin-bottom: 3vw;
+		margin-top:    0vw;
+	}
+
+	#create6 {
+		margin-bottom: 3vw;
+		margin-top:    0vw;
+	}
+	
+	#loginform{
+		margin-top: 2.5vw;
+	}
+}
+
+@media (min-width:641px)  {
+	#plan {
+		margin-bottom: 6vw;
+		margin-top:    6vw;
+	}
+}
+
+@media (min-width:961px)  {
+	#plan {
+		margin-bottom: 3vw;
+		margin-top:    3vw;
+	}
+	
+	#box{
+		width: 80vw;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width:1025px)  {
+	#box{
+		width: 60vw;
+		margin: 0 auto;
+	}
+	
+	#plan {
+		margin-bottom: 1.5vw;
+		margin-top:    1.5vw;
+	}
+
+	#create3{
+		margin-bottom: 1vw;
+	}
+
+	#create4 {
+		margin-bottom: 1vw;
+		margin-top:    0vw;
+	}
+
+	#create5 {
+		margin-bottom: 1vw;
+		margin-top:    0vw;
+	}
+
+	#create6 {
+		margin-bottom: 1vw;
+		margin-top:    0vw;
+	}
+	
+	#loginform{
+		margin-top: 2.5vw;
+	}
+}
+
+@media (min-width:1281px)  {
+	#box{
+		width: 40vw;
+		margin: 0 auto;
+	}
+	
+	#plan {
+		margin-bottom: 3vw;
+		margin-top:    3vw;
+	}
+	
+	#loginform{
+		margin-top: 1vw;
+	}
+}
+
+/*----------------------- Index Page Styles----------------------------------------*/
+
+
+/* smartphones, iPhone, portrait 480x320 phones */ 
+#imagem1{
+	display: block;
+	margin: 0 auto;
+}
+
+#intro_texto h2{
+		/*position: absolute;
+		top: -2.7vw;
+		left: 6vw;
+		height: 100%;*/
+		margin: 0 auto;
+		width: 90%;
+		font-size: 1.25em;
+		line-height: 1.1000em;
+		color: rgba(78, 191, 3, 0.88);
+		text-shadow: 1px 1px 2px #000000;
+}
+
+#bloco0 {
+	position: relative;
+	height:20vw;
+	margin: 0 auto;
+	border-bottom: 3px solid #61d217;
+	width: 95.5vw;
+}
+	
+#texto0 {
+	position: absolute;
+	left: 0.5vw;
+	top: 8vw;
+	font-size: 1em;
+	line-height: 1.1000em;
+	margin: 0.8928em 0;
+}
+
+#bloco1 {
+	position: relative;
+	height:150vw;
+	width: 95.5vw;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border-bottom: 3px solid #61d217;
+}
+	
+#imagem1 {
+	display: block;
+	width: 82vw;
+	height: 60vw;
+}
+
+#titulo1 {
+	display: block;
+	font-size: 1.25em;
+	line-height: 1.1000em;
+	margin: 5 0;
+	margin-left: 20px; 
+	text-decoration: none;
+	color: #ef4a1a;
+}
+
+#titulo1 a {
+	text-decoration: none;
+}
+
+#texto1 {
+	position: absolute;
+	left: 7vw;
+	top: 80vw;
+	width: 80vw;
+	height: 40vw;
+	line-height: 1.3636em;
+	margin: 20px 0;
+}
+
+a:-webkit-any-link {
+	text-decoration: none;
+}
+
+#buttonIndex {
+	margin: 0 auto;
+}
+
+/*Isto é básicamente para se usar nos Landscapes dos telemoveis.*/
+@media (min-width:481px)  { 
+	#bloco1 {
+		height: 95vw;
+	}
+	
+	#texto1 {
+		height:	20vw;
+		top: 70vw;
+	}
+}
+
+@media (min-width:641px)  {
+	#bloco1 {
+		height: 70vw;
+	}
+	
+	#texto1 {
+		height:	20vw;
+		top: 52vw;
+	}
+	
+	#imagem1{
+		width: 63vw;
+		height: 46vw;
+	}
+	
+	#intro_texto{
+		margin-top: 5vw;
+	}
+}
+
+@media (min-width:961px)  {
+		
+	#intro_texto{
+		margin-top:    2vw;
+		margin-bottom: 2vw;
+	}
+	
+	#bloco0 {
+		width: 88vw;
+		height:5vw;
+	}
+	
+	#texto0 {
+		left:   0.5vw;
+		top:    2vw;
+		margin: 1vw 0;
+	}
+	
+	#bloco1 {
+		height: 48vw;
+		width:  90vw;
+	}
+	
+	#imagem1{
+		width: 44.1vw;
+		height: 32.2vw;
+	}
+	
+	#texto1 {
+		height:	20vw;
+		top: 38vw;
+	}
+}
+
+@media (min-width:1025px)  {
+	
+	#intro_texto{
+		width: 75vw;
+		margin: 2vw auto;
+	}
+	
+	#bloco0 {
+		width: 68vw;
+		height:3vw;
+	}
+	
+	#texto0 {
+		left:   0.5vw;
+		top:    0vw;
+		margin: 1vw 0;
+	}
+	
+	#bloco1 {
+		width:  68vw;
+		height: 40vw;
+	}
+	
+	#titulo1 {
+		margin-left: 0.6vw;
+	}
+	
+	#imagem1{
+		width: 35.28vw;
+		height: 25.76vw;
+	}
+	
+	#texto1 {
+		height:	10vw;
+		width: 60vw;
+		left: 5vw;
+		top: 30vw;
+	}
+}
+
+@media (min-width:1281px)  {
+	#intro_texto{
+		width: 53vw;
+	}
+	
+	#bloco0 {
+		width: 48vw;
+	}
+	
+	#texto0 {
+		left:   -0.08vw;
+		top:    0.15vw;
+	}
+	
+	#bloco1 {
+		width:  49vw;
+		height: 30vw;
+	}
+	
+	#imagem1{
+		width: 28.2vw;
+		height: 20.6vw;
+	}
+	
+	#texto1 {
+		height:	10vw;
+		width: 50vw;
+		left: 0vw;
+		top: 23vw;
+	}
+}
+
+/*----------------------- SignUp Page Styles----------------------------------------*/
+
+#teste0 {
+	width: 90%;
+	margin-left: 4vw;
+}
+
+#teste1 {
+	margin-top:    4vw;
+	margin-bottom: 4vw;
+}
+
+#country {
+	width: 90%;
+}
+
+@media (min-width:481px)  {
+	#teste0{
+		border: 3px solid #65b300;
+		background-color: rgba(101, 179, 0, 0.32);
+	}
+	
+	#teste1 {
+		margin-left:   4vw;
+	}
+	
+	#teste11 {
+		margin-left:   4vw;
+	}
+	
+	#teste16 {
+		margin-left:   4vw;
+		margin-bottom: 4vw;
+	}
+	
+	#teste14 {
+		margin-left:   4vw;
+		margin-bottom: 4vw;
+	}
+}
+
+@media (min-width:961px){
+	#teste0{
+		width: 50vw;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width:1025px){
+	#teste0{
+		width: 40vw;
+	}
+}
+
+@media (min-width:1281px)  {
+	#teste0{
+		width: 30vw;
+	}
+}
+
+/*----------------------- Articles Page Styles----------------------------------------*/
+
+#auto_article{
+	width: 90vw;
+	background-color: rgba(101, 179, 0, 0.32);
+	margin: 10vw auto;
+	border: 3px solid #65b300;
+}
+
+#auto_article h2 {
+	margin-left: 3vw;
+	color: #ef4a1a;
+	margin-bottom: 0.4vw;
+	margin-top: 2vw;
+}
+
+/*Os textos têm de vir com html5 tags nos paragrafos já metidas.<p></p> */
+#auto_article p {
+	margin-left: 3vw;
+	margin-right: 3vw;
+}
+
+#auto_article ul {
+	width: 75vw;
+	margin: 0vw auto 3vw;
+	padding-left: 1vw;
+}
+
+#auto_article img {
+	margin-left: 4vw;
+	width: 80vw;
+	height: 50vw;
+}
+
+#auto_article_tab {
+	color: #ef4a1a;
+	font-weight: 900;
+}
+
+#buttonArticles {
+	margin: 0 auto;
+}
+
+@media (min-width:481px)  {
+	#auto_article{
+		margin: 5vw auto;
+	}
+}
+
+@media (min-width:961px)  {
+	#auto_article{
+		width: 70%;
+	}
+	
+	#auto_article ul {
+		width: 55vw;
+	}
+	
+	#auto_article img {
+		width: 48vw;
+		height: 30vw;
+	}	
+}
+
+@media (min-width:1025px)  {
+	#auto_article{
+		width: 50%;
+	}
+	
+	#auto_article ul {
+		width: 40vw;
+	}
+	
+	#auto_article img {
+		width: 38.4vw;
+		height: 24vw;
+	}	
+}
+
+@media (min-width:1281px)  {
+	#auto_article{
+		width: 40%;
+		margin: 2.5vw auto;
+	}
+	
+	#auto_article ul {
+		width: 30vw;
+	}
+	
+	#auto_article img {
+		width: 30.7vw;
+		height: 19.2vw;
+	}	
+	
+}
+
+/*----------------------- Food Page Styles----------------------------------------*/
+
+#auto_food{
+	width: 90vw;
+	background-color: rgba(101, 179, 0, 0.32);
+	margin: 10vw auto;
+	border: 3px solid #65b300;
+}
+
+#auto_food h2 {
+	margin-left: 3vw;
+	color: #ef4a1a;
+	margin-bottom: 0.4vw;
+	margin-top: 2vw;
+}
+ 
+#auto_food p {
+	margin-left: 3vw;
+	margin-right: 3vw;
+}
+	
+#auto_food ul {
+	width: 75vw;
+	margin: 0vw auto 3vw;
+	padding-left: 1vw;
+}
+
+#auto_food img {
+	margin-left: 4vw;
+	width: 80vw;
+	height: 50vw;
+}
+
+#auto_food_tab {
+	color: #ef4a1a;
+	font-weight: 900;
+}
+
+#buttonFood {
+	margin: 0 auto;
+}
+
+@media (min-width:481px)  {
+	#auto_food{
+		margin: 5vw auto;
+	}
+}
+
+@media (min-width:961px)  {
+	#auto_food{
+		width: 70%;
+	}
+	
+	#auto_food ul {
+		width: 55vw;
+	}
+	
+	#auto_food img {
+		width: 48vw;
+		height: 30vw;
+	}	
+}
+
+@media (min-width:1025px)  {
+	#auto_food{
+		width: 50%;
+	}
+	
+	#auto_food ul {
+		width: 40vw;
+	}
+	
+	#auto_food img {
+		width: 38.4vw;
+		height: 24vw;
+	}
+}
+
+@media (min-width:1281px)  {
+	#auto_food{
+		width: 40%;
+		margin: 2.5vw auto;
+	}
+	
+	#auto_food ul {
+		width: 30vw;
+	}
+	
+	#auto_food img {
+		width:  30.7vw;
+		height: 19.2vw;
+	}
+}

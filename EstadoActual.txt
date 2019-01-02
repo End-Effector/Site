@@ -1,0 +1,136 @@
+******************** Website *************************
+
++ [Base de Dados Artigos] Existem 3 tipos de artigos que são gerados pelo código.
+- Titulo e texto corrido
+- Titulo, Intro, bullets(tabela auxiliar à tabela principal do Articles.)
+- Titulo, Image, Intro, Ingredient List, Texto corrido.
+
++ Imagens têm de ter um standard de altura e largura.
+- Página principal.
+- Articles e food pode ser igual.
+- o css é que vai dizer o width e heigth das imagens. N se vai fazer nenhuma conta.
+- As imagens têm de ser grandes, mas sempre com o mesmo tamanho.
+
++ Standard Imagens (Largura * Altura)
+- 1280 por 555 px
+
++ Por fazer, para finalizar o website.
+- CSS
+
++ D E S L I G A R    A      C A C H E
+
++ Slider de imagens só aparece visivel a partir do 961px!
+
++Telemovel:
+- Index:                                            FEITA
+- Articles:                                         FEITA
+- Food:                                             FEITA
+- Services:                                         FEITA (Onde se mostram os produtos)
+- Shop:                                             FEITA (Onde o user pode comprar)
+- SingUp:                                           FEITA (Create user account page) 
+- Reparado o menu:                                  Feito
+- userData:                                         FEITA
+- Erro consola resolver, index page:                FEITO 
+- menu & footer para 481px							Feito
+- Index para 481px									Feito
+- Articles para 481px								Feito
+- Food para 481px									Feito
+- Services para 481px                               Feito
+- Sign-up para 481px								Feito
+- user-Data para 481px								Feito
+- Sign-up Simplificar CSS                           Feito
+- Shop para 481px								    Feito
+- Index 641px                                       Feito
+- WARNING LOG IN NOT SECURE???						N Feito
+- Articles 641px									Feito
+- Food para 641px									Feito
+- Services para 641px                               Feito
+- Sign-up para 641px								Feito
+- user-Data para 641px								Feito
+- Shop para 641px								    Feito
+- Trocar o nome do site para o meter no CV			Feito 
+- Index          961px                              Feito
+- Articles       961px								Feito
+- Food para      961px								Feito
+- Services para  961px                              Feito
+- Sign-up para   961px								Feito
+- user-Data para 961px								Feito
+- Shop para      961px								Feito
+- Index          1025px                             Feito
+- Articles       1025px								Feito
+- Food para      1025px								Feito
+- Services para  1025px                             Feito
+- Sign-up para   1025px								Feito
+- user-Data para 1025px								Feito
+- Shop para      1025px								Feito
+- Index          1281px                             Feito
+- Articles       1281px								Feito
+- Food para      1281px								Feito
+- Services para  1281px                             Feito
+- Sign-up para   1281px								Feito
+- user-Data para 1281px								Feito
+- Shop para      1281px								N Feito
+- Meter no CV quando tiver conteudo metido			N Feito
+- Informações de log in Email e Password precisam de 
+melhor CSS(em todos eles)							Feito
+Ideia tem de ir até ao limite sem problemas, se tiver tem de saltar para o limite
+seguinte. É isto!
+- services log ins CSS 320px						Feito
+- services log ins CSS 481px						Feito
+- services log ins CSS 641px						Feito
+- services log ins CSS 961px						Feito
+- services log ins CSS 1025px						Feito
+- services log ins CSS 1281px						Feito
+- shop log ins CSS 320px							Feito
+- shop log ins CSS 481px							Feito
+- shop log ins CSS 641px							Feito
+- shop log ins CSS 961px							Feito
+- shop log ins CSS 1025px							Feito
+- shop log ins CSS 1281px							Feito
+- userData log ins CSS 320px						Feito
+- userData log ins CSS 481px						Feito	
+- userData log ins CSS 641px						Feito	
+- userData log ins CSS 961px						Feito	
+- userData log ins CSS 1025px						Feito
+- userData log ins CSS 1281px						Feito	
+- Botão FIX e Fix também do search bar n usado 		Feito
+- Esquema da Base de dados							N Feito
+- Como tirar imagens sempre com o mesmo tamanho? 
+Pesquisar. 											Feito 
+- Receitas em ingles								Feito
+- Imagens de Receitas								N Feito
+(Imagens, o telemovel tem de ser na horizontal e para trás nunca na vertical.)
+- Imagens n estou a compreender o problema			Feito		(Largura * Altura) - 1280 por 555 px)
+- MAIS CONTEUDO SFF									N FEITO
+mais fotos, mais receitas, mais artigos!
+
+- Imagens em rotação têm de ser acertadas			Feito	(Largura * Altura) - 870px por 230 px)
+- banner com o serviço								N FEITO	(We can help you achive your goals.)
+- banner Imagem/Desenho com comidas					N FEITO	(Ideas for your meals.)
+- banner artigos									N FEITO	(Updated information about food and health.)
+- banner Welcome									N FEITO (Know how and what to eat. MAKE GAINS.)
+- Problema de loading das images que rodam			Feito  -> Baixar o tamanho das imagens. Têm de ser jpgs.
+Corrigido! Espera pelo load e so depois mostra.
+- Mudar as imagens para JPGs, reduzir tamanho		Feito.
+- Pressionar pessoal para fazer a parte deles		Feito.
+- Pressionar MAIS se n tiver as cenas!				N Feito.
+
++ Parece haver um problema com o logo do site! N está a aparecer em algumas páginas,
+por exemplo na página shop. Está relacionado com o php a meter o log out. Uma possivel
+solução pode ser meter a linha html da imagem no php. Esta alteração terá de ser feita 
+no screen singUp e Shop. Isto das imagens/logo n vai aparecer em
+todos os screens, para facilitar! Melhor solução para n se perder
+muito tempo com isto.
+
++ Na página Food falta as unidades nas macros da comida.
++ Imagem do bolo_bolacha afinal está trocada. Afinal corresponde à imagem de um boloBananaCoco.png.
++ Falta meter as imagens correctas quando houverem imagens.
+
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }  												FEITO
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }						FEITO
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }   FEITO
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ } 									    FEITO
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ } 
+@media (min-width:1281px) { /* hi-res laptops and desktops */ } 															  N FEITO
+
